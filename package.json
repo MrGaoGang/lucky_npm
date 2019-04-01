@@ -1,0 +1,71 @@
+{
+	"name": "lucky-npm",
+	"displayName": "lucky npm",
+	"description": "",
+	"version": "1.0.1",
+	"publisher": "mrgao",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MrGaoGang/lucky_start.git"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"workspaceContains:package.json",
+		"onCommand:lucky.gao.extension.install",
+		"onCommand:lucky.gao.extension.start_dev",
+		"onCommand:lucky.gao.extension.build_pro"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"views": {
+			"explorer": [{
+				"id": "mrgao_luckys",
+				"name": "LUCKY NPM"
+			}]
+		},
+		"commands": [{
+			"command": "lucky.gao.extension.install",
+			"title": "安装依赖(install)"
+
+		}, {
+			"command": "lucky.gao.extension.start_dev",
+			"title": "启动测试环境(dev)"
+		}, {
+			"command": "lucky.gao.extension.build_pro",
+			"title": "构建生产版本(pro)"
+		}],
+		"menus": {
+			"editor/context": [{
+					"when": "editorFocus",
+					"command": "lucky.gao.extension.install",
+					"group": "6_luck"
+				},
+				{
+					"when": "editorFocus",
+					"command": "lucky.gao.extension.start_dev",
+					"group": "6_luck"
+				}, {
+					"when": "editorFocus",
+					"command": "lucky.gao.extension.build_pro",
+					"group": "6_luck"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
