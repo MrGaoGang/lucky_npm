@@ -23,6 +23,12 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./src/snippet/snippet.json"
+			}
+		],
 		"views": {
 			"explorer": [{
 				"id": "mrgao_luckys",

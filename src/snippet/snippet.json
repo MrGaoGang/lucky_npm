@@ -1,0 +1,14 @@
+{
+    "fetch-ES6":{
+        "prefix":"fetch",
+        "scope":"javascript",
+        "body":[
+            "fetch(${1:url},{method:'get',header:{'Content-Type':'application/json'}})",
+            "\t.then(res=>res.json())",
+            "\t.then(data=>{${2}",
+            "\t})",
+            "\t.catch(error=>{${3}",
+            "\t})"
+        ]
+    }
+}
