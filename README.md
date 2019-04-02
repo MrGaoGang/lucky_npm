@@ -1,4 +1,5 @@
 ## lucky npm
+**[插件地址 欢迎star](https://github.com/MrGaoGang/lucky_npm)**
 
 > 此插件的主要功能是方面使用 npm install,npm run dev,npm run build 命令；搭配 vue 脚手架 [Vue+webpack+vuex+router](https://github.com/MrGaoGang/lucky_vue)更加舒适哦
 
@@ -358,3 +359,7 @@ vscode.workspace.openTextDocument(vscode.Uri.file("文件路径)).then(
 - vscode.env.appName //当前编辑器的名称
 - vscode.env.appRoot //打开的根目录
 - vscode.env.language //用户的语言环境
+
+
+
+**[插件地址 欢迎star](https://github.com/MrGaoGang/lucky_npm)**
