@@ -130,8 +130,8 @@
 
 ```json
 "activationEvents"：[
-     " onLanguage：json "，
-     " onLanguage：markdown "，
+     " onLanguage：json ",
+     " onLanguage：markdown ",
      " onLanguage：typescript "
 ]
 ```
