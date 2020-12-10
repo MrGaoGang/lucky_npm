@@ -1,3 +1,7 @@
+
+已迁移到[lucky_tools](https://github.com/MrGaoGang/lucky_tools)
+
+
 ## lucky npm
 **[插件地址 欢迎star](https://github.com/MrGaoGang/lucky_npm)**
 
